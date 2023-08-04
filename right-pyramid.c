@@ -2,13 +2,17 @@
 
 int main(){
     int num;
-    char ch[100];
     scanf("%d", &num);
-    for(int i = 0; i <= num; i++){
-        for(int j = 0; j <= num; j++){
-            if(j < i){
-                printf("* ");
-            }
+    for(int i = 1; i <= num; i++){
+        for(int j = i; j < num;j++){ //num-i
+            printf(" ");
+        }
+        for(int k = 1; k <= i; k++){
+            // if(k == i || k == 1 || i == num)
+            //     printf("*");
+            // else
+            //     printf(" ");
+            printf("*");
         }
         printf("\n");
     }
