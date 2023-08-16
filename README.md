@@ -1,2 +1,0 @@
-# Patterns
-Various pattern implementations. 
