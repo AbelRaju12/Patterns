@@ -1,0 +1,12 @@
+s = input()
+print(any(i.isalnum() for i in s) )
+print(any(i.isalpha() for i in s) )
+print(any(i.isdigit() for i in s) )
+print(any(i.islower() for i in s) )
+print(any(i.isupper() for i in s) )
+
+# print(any(map(str.isalnum, s)))
+# print(any(map(str.isalpha, s)))
+# print(any(map(str.isdigit, s)))
+# print(any(map(str.islower, s)))
+# print(any(map(str.isupper, s)))
