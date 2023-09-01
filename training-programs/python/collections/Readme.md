@@ -2,12 +2,12 @@ Collections-
 
 -------------------------
 
-Counter,
+Counter
 
-namedtuple,
+namedtuple
 
-OrderedDict,
+OrderedDict
 
-Defaultdict,
+Defaultdict
 
-Deque,
+Deque
