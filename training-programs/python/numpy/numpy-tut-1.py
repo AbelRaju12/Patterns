@@ -4,11 +4,11 @@ zero_array = np.zeros((2, 3, 3))
 # print(zero_array)
 
 one_array = np.ones((2,2,2), dtype = 'int32') #dype not necessary
-# print(one_array)
+print(one_array)
 
 b = np.array([[[2, 3, 4], [5, 6, 7]], [[5, 7, 9], [3, 2, 1]]])
 
-c = np.full_like(b, 5) #prints the b matrix with value 4
+c = np.full_like(b, 5) #prints the b matrix with value 5
 # print(c)
 
 random_array = np.random.random_sample(b.shape)
