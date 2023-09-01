@@ -9,7 +9,7 @@ input_n, input_m = map(int, input().split())
 for i in range(input_n):
     ans1 = input()
     d[ans1].append(i+1)
-print(d)
+# print(d)
 for j in range(input_m):
     ans2 = input()
     if ans2 in d:

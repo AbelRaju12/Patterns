@@ -21,13 +21,13 @@ for i in list:
     if i[1] == second_min:
         print(i[0])
         
-grade.sort()
-second = 0
-minim = grade[0]
-for i in grade:
-    if i != minim:
-        second = i
-        break
-for i in list:
-    if i[2] == second:
-        print(i[0], i[1], i[2])
+# grade.sort()
+# second = 0
+# minim = grade[0]
+# for i in grade:
+#     if i != minim:
+#         second = i
+#         break
+# for i in list:
+#     if i[2] == second:
+#         print(i[0], i[1], i[2])

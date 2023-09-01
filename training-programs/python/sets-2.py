@@ -11,3 +11,4 @@ for i in elements_arr:
     elif i in B:
         happiness -= 1
 print(happiness)
+

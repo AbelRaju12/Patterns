@@ -1,6 +1,6 @@
 from collections import namedtuple
 
-# point = namedtuple('point', 'x,y')
+# point = namedtuple('my_point', 'x,y')
 # pt1 = point(1,2)
 # pt2 = point(3,4)
 # print(pt1, pt2)
