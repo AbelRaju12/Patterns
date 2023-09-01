@@ -1,6 +1,11 @@
 #collections:
-    Counter
-    namedtuple
-    OrderedDict
-    Defaultdict
-    Deque
+
+        Counter
+
+        namedtuple
+        
+        OrderedDict
+        
+        Defaultdict
+        
+        Deque
