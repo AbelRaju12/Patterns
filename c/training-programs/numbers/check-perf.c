@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 void main() {
   int rem, sum = 0, i, num;
   printf("please enter number: ");
@@ -14,5 +13,4 @@ void main() {
     printf("given no. is perfect number");
   else
     printf("given no. is not a perfect number");
-  getch();
 }
