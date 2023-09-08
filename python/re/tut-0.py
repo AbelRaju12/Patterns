@@ -11,6 +11,7 @@ a
 !@#$%^&*()_+}.{":>?<}
 
 1234-569-87
+Start a sentence and bring it to an end
 
 fsehdjlo5+665fsd65sdffsd
 '''
@@ -32,3 +33,8 @@ for match in matches:
     print(match)
     
 # print(text_to_search[26:29])
+
+pattern = re.compile(r'Start')
+
+matches = pattern.search(sentence)
+print(matches)
