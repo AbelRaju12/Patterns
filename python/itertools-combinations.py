@@ -12,3 +12,7 @@ for i in combinations(string, num):
 # for j in range(1, int(num)+1):
 # for i in combinations(sorted(string), j):
 #     print("".join(i))
+
+from itertools import combinations_with_replacement
+s, n = input().split()
+print(*[''.join(i) for i in combinations_with_replacement(sorted(s), int(n))], sep="\n")
