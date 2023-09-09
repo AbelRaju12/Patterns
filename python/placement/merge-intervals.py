@@ -20,7 +20,16 @@ def merge_intervals(intervals):
     return merged
 
 # Test the merge_intervals function
-intervals = [[1, 3], [2, 6], [8, 9], [15, 18], [12, 19]]
+
+# intervals = [[1, 3], [2, 6], [8, 9], [15, 18], [12, 19]]
+intervals = []
+for _ in range(3):
+    while True:
+        x, y =int(input()), int(input())
+        intervals.append([x, y])
+        break
+    
+print(intervals)
 merged_intervals = merge_intervals(intervals)
 
 print("Merged Intervals:")
