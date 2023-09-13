@@ -10,7 +10,7 @@ def merge_intervals(intervals):
     for interval in intervals[1:]:
         current_interval = merged[-1]
 
-        if interval[0] <= current_interval[1]:
+        if current_interval[1] >= interval[0]:
             # If the current interval overlaps with the previous one, merge them
             current_interval[1] = max(current_interval[1], interval[1])
         else:
