@@ -1,6 +1,5 @@
 #include<stdio.h>
-#include<math.h>
-#include<conio.h>
+
 void main(){
 	int num, original, count = 0, digit, temp = 0, pow = 1;
     scanf("%d", &num);
@@ -25,5 +24,4 @@ void main(){
     else{
         printf("Its not an armstrong");
     }
-    getch();
 } 

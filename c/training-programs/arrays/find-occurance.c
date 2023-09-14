@@ -10,8 +10,9 @@ int main(){
         scanf("%d", &arr[i]);
         occ[arr[i]]++;
     }
-    for(int i = 0; i < n; i++){
-        printf("%d occurs %d times\n", i + 1, occ[i]);
-    }
+    int element;
+    printf("Enter the element: ");
+    scanf("%d", &element);
+    printf("%d occurs %d times", element, occ[element]);
     return 0;
 }

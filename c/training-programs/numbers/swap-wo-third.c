@@ -12,3 +12,4 @@ void main() {
   printf("value of a is : %d \n", a);
   printf("value of b is : %d ", b);
 }
+
