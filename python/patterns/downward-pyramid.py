@@ -1,0 +1,9 @@
+rows = int(input())
+k = 2 * rows - 2
+for i in range(rows, -1, -1):
+    for j in range(k, 0, -1):
+        print(end=" ")
+    k = k + 1
+    for j in range(i + 1):
+        print("*", end=" ")
+    print("")
