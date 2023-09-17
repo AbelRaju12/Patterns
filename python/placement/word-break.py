@@ -8,6 +8,9 @@ def wordbreak(string, wordDict):
                 dp[i] = dp [i + len(w)]
             if dp[i]:
                 break
+    
+    # for i in range(len(s)):
+    #     print(dp[i], end =" ")
             
     return dp[0]
         

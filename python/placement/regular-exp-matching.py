@@ -14,6 +14,6 @@ def is_match(s, p):
 
 # Example usage
 s = "mississippi"
-p = "mis*is*ip*."
+p = "l*mis*is*ip*."
 result = is_match(s, p)
 print(result)
