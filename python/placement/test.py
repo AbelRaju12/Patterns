@@ -1,20 +1,28 @@
-def largestRectHist(height):
-    maxarea = 0
-    stack = []
+def minWindowSubstring(s, t):
+    countT, window = {}, {}
     
-    for i, h in enumerate(height):
-        start = i
-        while stack and stack[-1][1] > h:
-            index, heights = stack.pop()
-            maxarea = max(maxarea, heights * (i - index))
-            start = index
-        stack.append((start, h))
+    for c in countT:
+        countT[c] = 1 + countT.get(c, 0)
+    have = 0
+    need = len(countT)
+    l = 0
+    res = [-1, -1]
+    resLen = float("Infinity")
+    for r in len(s):
+        c = s[r]
+        window[c] = 1 + window.get(c, 0)
         
-    for i, h in stack:
-        maxarea = max(maxarea, h * (len(height) - i))
-        
-    return maxarea
-
-histogram = [2, 1, 5, 6, 2, 3]
-result = largestRectHist(histogram)
-print(f"The largest rectangle area in the histogram is: {result}")
+        if c in countT and window[c] == countT[c]:
+            have += 1
+            
+        while have == need:
+            if (r - l + 1) < resLen:
+                res = [l, r]
+                resLen = (r - l + 1)
+            window[s[l]] -= 1
+            if s[l] in countT and window[s[l]] < countT[s[l]]:
+                have -= 1
+            l += 1
+            
+    l, r = res
+    return s[l: r + 1] if resLen != float("infinity") else ""
